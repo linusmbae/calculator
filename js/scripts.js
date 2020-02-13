@@ -1,7 +1,9 @@
-var multiply = function(number1, number2) {
-  return number1 * number2;
+var bmi = function(weight, height) {
+  return weight / height;
 };
-var number1 = prompt("Enter a number:");
-var number2 = prompt("Enter another number:");
-var result = multiply(number1, number2);
-alert(result);
+var weight = prompt("Enter your weight(ks):");
+var height = prompt("Enter your height(cm):");
+var result = bmi(weight, height);
+if (result<18.5){
+alert("results"+ result +"underweight");
+}
